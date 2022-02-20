@@ -33,7 +33,6 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pbCanvas = new System.Windows.Forms.PictureBox();
             this.score = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,21 +65,13 @@
             // score
             // 
             this.score.AutoSize = true;
-            this.score.Location = new System.Drawing.Point(587, 253);
+            this.score.BackColor = System.Drawing.Color.White;
+            this.score.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.score.Location = new System.Drawing.Point(536, 184);
             this.score.Name = "score";
-            this.score.Size = new System.Drawing.Size(0, 13);
-            this.score.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(568, 232);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 55);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Score:";
+            this.score.Size = new System.Drawing.Size(169, 55);
+            this.score.TabIndex = 4;
+            this.score.Text = "Score:";
             // 
             // Form1
             // 
@@ -88,7 +79,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.score);
             this.Controls.Add(this.lblGameOver);
             this.Controls.Add(this.pbCanvas);
@@ -108,7 +98,6 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.PictureBox pbCanvas;
         private System.Windows.Forms.Label score;
-        private System.Windows.Forms.Label label1;
     }
 }
 
