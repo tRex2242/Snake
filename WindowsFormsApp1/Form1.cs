@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
                             Snake[i].X--;
                             break;
                         case Direction.Right:
-                            Snake[i].Y++;
+                            Snake[i].X++;
                             break;
                     }
 
